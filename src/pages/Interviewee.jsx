@@ -20,7 +20,7 @@ const Interviewee = () => {
     const fetchSummary = async () => {
       try {
         const res = await axios.get(
-          `http://127.0.0.1:8000/summary/${candidateId}`
+          `https://career-conversation-xckj.onrender.com/summary/${candidateId}`
         );
         setCandidate(res.data);
       } catch (err) {

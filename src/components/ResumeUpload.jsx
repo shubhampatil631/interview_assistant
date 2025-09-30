@@ -19,7 +19,7 @@ const ResumeUpload = () => {
 
     try {
       setLoading(true);
-      const res = await axios.post("http://127.0.0.1:8000/upload_resume", form);
+      const res = await axios.post("https://career-conversation-xckj.onrender.com/upload_resume", form);
       const data = res.data;
       setCandidateId(data.candidate_id);
 
@@ -48,7 +48,7 @@ const ResumeUpload = () => {
 
     try {
       setLoading(true);
-      const res = await axios.post("http://127.0.0.1:8000/submit_missing_info", form);
+      const res = await axios.post("https://career-conversation-xckj.onrender.com/submit_missing_info", form);
       const data = res.data;
 
       if (data.missing_fields && data.missing_fields.length > 0) {

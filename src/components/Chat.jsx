@@ -21,7 +21,7 @@ const ChatPage = () => {
 
     try {
       setLoading(true);
-      const res = await axios.post("http://127.0.0.1:8000/chat", form);
+      const res = await axios.post("https://career-conversation-xckj.onrender.com/chat", form);
       const data = res.data;
 
       if (data.error) {

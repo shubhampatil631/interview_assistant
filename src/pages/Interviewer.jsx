@@ -18,7 +18,7 @@ const Interviewer = () => {
   useEffect(() => {
     const fetchCandidates = async () => {
       try {
-        const res = await axios.get("http://127.0.0.1:8000/candidates");
+        const res = await axios.get("https://career-conversation-xckj.onrender.com/candidates");
         setCandidates(res.data);
       } catch (err) {
         console.error(err);
